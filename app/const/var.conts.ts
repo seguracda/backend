@@ -1,0 +1,1 @@
+export const templateHeader = ["fecha_vencimiento","nombre","placa","tipo_vehiculo","cedula","celular_1","celular_2"]
