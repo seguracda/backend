@@ -5,7 +5,7 @@ import { StatisticsRepocitory } from "../src/statistics/data/statistics.reposito
 
 export class JobShedule {
   static runJob() {
-    return schedule.scheduleJob("*/1 * * * *", async function () {
+    return schedule.scheduleJob("0 8 * * *", async function () {
       const repository = new ClientRepository(new StatisticsRepocitory());
       repository.sendMessageExpired();
     });

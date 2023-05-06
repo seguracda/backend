@@ -8,7 +8,7 @@ async function main() {
   const app = new Servidor();
   await app.listen();
   await DataBase.initDataBase(EnvDataBase.URL_MONGO);
-  //JobShedule.runJob();
+  JobShedule.runJob();
   
 }
 
